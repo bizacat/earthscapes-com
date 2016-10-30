@@ -5981,7 +5981,8 @@ pre {
  */
 .site-header {
   min-height: 56px;
-  background: #299c54 url("bizacat.github.io/earthscapes-com/images/brick-pattern.jpg");
+  background-color: #299c54;
+  background: url("images/brick-pattern.jpg");
   position: relative; }
 
 .wrapper {
