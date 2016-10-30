@@ -6064,12 +6064,17 @@ pre {
   @media screen and (max-width: 600px) {
     .nav {
       position: absolute;
-      top: 9px;
-      right: 15px;
-      background-color: #fdfdfd;
-      border: 1px solid #e8e8e8;
-      border-radius: 5px;
-      text-align: right; }
+      z-index: 999;
+      background: #299c54;
+      width: 100%; }
+      .nav li {
+        display: block;
+        float: none;
+        margin-right: 0;
+        border: none;
+        text-align: right; }
+      .nav .dropdown-menu {
+        right: 0; }
       .nav .menu-icon {
         display: block;
         float: right;
@@ -6118,6 +6123,10 @@ pre {
       background: #ffffff;
       color: #333333;
       text-shadow: none; }
+  @media screen and (max-width: 600px) {
+    .home .intro {
+      padding-top: 30px;
+      background-position-x: 15%; } }
 .home .services {
   text-align: center; }
   .home .services ul {
