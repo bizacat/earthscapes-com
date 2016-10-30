@@ -5982,7 +5982,7 @@ pre {
 .site-header {
   min-height: 56px;
   background-color: #299c54;
-  background: url("/images/brick-pattern.jpg");
+  background: url("images/brick-pattern.jpg");
   position: relative; }
 
 .wrapper {
