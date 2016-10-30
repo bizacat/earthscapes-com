@@ -5966,8 +5966,8 @@ pre {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?yn2wr0");
-  src: url("../fonts/icomoon.eot?yn2wr0#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?yn2wr0") format("truetype"), url("../fonts/icomoon.woff?yn2wr0") format("woff"), url("../fonts/icomoon.svg?yn2wr0#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?405jn0");
+  src: url("../fonts/icomoon.eot?405jn0#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?405jn0") format("truetype"), url("../fonts/icomoon.woff?405jn0") format("woff"), url("../fonts/icomoon.svg?405jn0#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -5986,6 +5986,9 @@ pre {
 .icon-logo-icon-thick:before {
   content: "\e900"; }
 
+.icon-menu:before {
+  content: "\e901"; }
+
 /**
  * Site header
  */
@@ -5994,6 +5997,9 @@ pre {
   background: #299c54 url("../images/brick-pattern.jpg");
   border-bottom: 8px solid #ffffff;
   position: relative; }
+  @media screen and (max-width: 600px) {
+    .site-header {
+      height: 100px; } }
 
 .wrapper {
   position: relative; }
@@ -6019,6 +6025,67 @@ pre {
     font-weight: 700;
     font-size: 130%;
     letter-spacing: 1px; }
+  @media screen and (max-width: 600px) {
+    .site-title .text, .site-title:visited .text, .site-title:hover .text {
+      top: -2.8rem; } }
+
+.menu-icon {
+  display: none;
+  float: right;
+  top: 35px;
+  cursor: pointer;
+  width: 35px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+  .menu-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out; }
+    .menu-icon span:nth-child(1) {
+      top: 0px; }
+    .menu-icon span:nth-child(2) {
+      top: 10px; }
+    .menu-icon span:nth-child(3) {
+      top: 20px; }
+  .menu-icon.open span:nth-child(1) {
+    top: 12px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  .menu-icon.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px; }
+  .menu-icon.open span:nth-child(3) {
+    top: 12px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg); }
+  @media screen and (max-width: 600px) {
+    .menu-icon {
+      display: inline-block; } }
 
 .nav {
   font-size: 18px;
@@ -6027,8 +6094,6 @@ pre {
   right: 0;
   bottom: 1px;
   font-family: 'filson-soft', 'open-sans', sans-serif; }
-  .nav .menu-icon {
-    display: none; }
   .nav > li {
     border: 2px solid #ffffff;
     border-width: 2px 2px 0;
@@ -6063,43 +6128,20 @@ pre {
       opacity: 0.65; }
   @media screen and (max-width: 600px) {
     .nav {
+      display: none;
       position: absolute;
+      top: 100px;
       z-index: 999;
-      background: #299c54;
       width: 100%; }
       .nav li {
+        background: #299c54;
         display: block;
         float: none;
         margin-right: 0;
         border: none;
         text-align: right; }
       .nav .dropdown-menu {
-        right: 0; }
-      .nav .menu-icon {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 26px;
-        line-height: 0;
-        padding-top: 10px;
-        text-align: center; }
-        .nav .menu-icon > svg {
-          width: 18px;
-          height: 15px; }
-          .nav .menu-icon > svg path {
-            fill: #424242; }
-      .nav .trigger {
-        clear: both;
-        display: none; }
-      .nav:hover .trigger {
-        display: block;
-        padding-bottom: 5px; }
-      .nav .page-link {
-        display: block;
-        padding: 5px 10px;
-        margin-left: 20px; }
-        .nav .page-link:not(:last-child) {
-          margin-right: 0; } }
+        right: 0; } }
 
 .home .intro {
   padding-top: 90px;
@@ -6126,7 +6168,7 @@ pre {
   @media screen and (max-width: 600px) {
     .home .intro {
       padding-top: 30px;
-      background-position-x: 15%; } }
+      background-position-x: 5%; } }
 .home .services {
   text-align: center; }
   .home .services ul {
