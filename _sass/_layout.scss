@@ -3,8 +3,7 @@
  */
 .site-header {
     min-height: 56px;
-    background-color: $brand-color;
-    background: url('bizacat.github.io/earthscapes-com/images/brick-pattern.jpg');
+    background: $brand-color url('bizacat.github.io/earthscapes-com/images/brick-pattern.jpg');
 
     // Positioning context for the mobile navigation icon
     position: relative;
