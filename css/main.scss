@@ -48,7 +48,8 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap",
+        //"../node_modules/bootstrap-sass/assets/stylesheets/bootstrap",
+        "http://bizacat.github.io/earthscapes-com/node_modules/bootstrap-sass/assets/stylesheets/bootstrap",
         "base",
         "icomoon-fonts",
         "layout"
