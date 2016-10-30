@@ -4,7 +4,7 @@
 .site-header {
     min-height: 56px;
     background: $brand-color url('../images/brick-pattern.jpg');
-
+    border-bottom: 8px solid #ffffff;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -150,6 +150,44 @@
 }
 
 
+.home {
+    .intro {
+        padding-top: $spacing-unit * 3;
+        background: url('../images/firepit-1b.jpg') no-repeat;
+        background-size: cover;
+        background-position-y: 15%;
+        width: 100%;
+        height: 40rem;
+        color: #ffffff;
+        text-shadow: 0 0 5px #000;
+        h4 {
+            font-weight: 100;
+        }
+        .button {
+            background: rgba(255,255,255,0.125);
+            color: #fff;
+            border-color: #fff;
+            text-shadow: 0 0 5px #000;
+            font-family: 'filson-soft';
+            margin-top: $spacing-unit * 0.5;
+            &:hover {
+                background: #ffffff;
+                color: #333333;
+                text-shadow: none;
+            }
+        }
+    }
+
+    .services {
+        text-align: center;
+        ul {
+            margin: 0 0 $spacing-unit;
+            list-style-type: none;
+        }
+    }
+
+}
+
 
 /**
  * Site footer
@@ -225,10 +263,10 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
     min-height: 20rem;
     //background: #ffffff;
     .wrapper {
+        padding: $spacing-unit;
     }
 }
 

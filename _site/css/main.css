@@ -5822,7 +5822,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -5870,7 +5870,8 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 300;
+  font-family: 'filson-soft', 'open-sans', sans-serif; }
 
 /**
  * Links
@@ -5954,6 +5955,15 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #299c54;
+  border: 2px solid #299c54;
+  outline: 0;
+  box-shadow: 0;
+  font-size: 18px; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?yn2wr0");
@@ -5982,6 +5992,7 @@ pre {
 .site-header {
   min-height: 56px;
   background: #299c54 url("../images/brick-pattern.jpg");
+  border-bottom: 8px solid #ffffff;
   position: relative; }
 
 .wrapper {
@@ -6085,6 +6096,34 @@ pre {
         .nav .page-link:not(:last-child) {
           margin-right: 0; } }
 
+.home .intro {
+  padding-top: 90px;
+  background: url("../images/firepit-1b.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 15%;
+  width: 100%;
+  height: 40rem;
+  color: #ffffff;
+  text-shadow: 0 0 5px #000; }
+  .home .intro h4 {
+    font-weight: 100; }
+  .home .intro .button {
+    background: rgba(255, 255, 255, 0.125);
+    color: #fff;
+    border-color: #fff;
+    text-shadow: 0 0 5px #000;
+    font-family: 'filson-soft';
+    margin-top: 15px; }
+    .home .intro .button:hover {
+      background: #ffffff;
+      color: #333333;
+      text-shadow: none; }
+.home .services {
+  text-align: center; }
+  .home .services ul {
+    margin: 0 0 30px;
+    list-style-type: none; }
+
 /**
  * Site footer
  */
@@ -6141,8 +6180,9 @@ pre {
  * Page content
  */
 .page-content {
-  padding: 30px 0;
   min-height: 20rem; }
+  .page-content .wrapper {
+    padding: 30px; }
 
 .page-heading {
   font-size: 20px; }
