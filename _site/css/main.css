@@ -6198,6 +6198,7 @@ pre {
   @media screen and (max-width: 600px) {
     .home .intro {
       padding-top: 30px;
+      background-image: url("../images/firepit-1b-dark.jpg");
       background-position-x: 5%; } }
 .home .services {
   text-align: center;

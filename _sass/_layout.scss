@@ -255,6 +255,7 @@
         }
         @include media-query($on-palm){
             padding-top: $spacing-unit;
+            background-image: url('../images/firepit-1b-dark.jpg');
             background-position-x: 5%;
         }
     }
