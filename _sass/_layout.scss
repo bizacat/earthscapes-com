@@ -18,7 +18,7 @@
 
 .site-title, .site-title:visited, .site-title:hover {
     display: inline-block;
-    font-family: 'Filson-soft', 'Open sans', sans-serif;
+    font-family: $filson-soft;
     font-size: 2.25rem;
     font-weight: 300;
     letter-spacing: -1px;
@@ -28,7 +28,6 @@
     text-decoration: none;
     [class^="icon"] {
         font-size: 400%;
-        margin-left: -1 * $spacing-unit;
     }
     .text {
         position: relative;
@@ -43,6 +42,29 @@
     @include media-query($on-palm) {
         .text {
             top: -2.8rem;
+        }
+    }
+}
+
+.phone-number {
+    color: #ffffff;
+    font-family: $filson-soft;
+    @include media-query($on-laptop) {
+        margin-top: 10px;
+        float: right;
+    }
+    @include media-query($on-palm) {
+        background: $brand-color;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: block;
+        padding: $spacing-unit * 0.5;
+        text-align: center;
+        &:before {
+            content: 'Call now: ';
         }
     }
 }
@@ -127,7 +149,7 @@
     position: absolute;
     right: 0;
     bottom: 1px;
-    font-family: 'filson-soft', 'open-sans', sans-serif;
+    font-family: $filson-soft;
 
     & > li {
         border: 2px solid #ffffff;
@@ -213,7 +235,7 @@
             color: #fff;
             border-color: #fff;
             text-shadow: 0 0 5px #000;
-            font-family: 'filson-soft';
+            font-family: $filson-soft;
             margin-top: $spacing-unit * 0.5;
             &:hover {
                 background: #ffffff;

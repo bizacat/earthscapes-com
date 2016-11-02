@@ -5966,8 +5966,8 @@ pre {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?405jn0");
-  src: url("../fonts/icomoon.eot?405jn0#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?405jn0") format("truetype"), url("../fonts/icomoon.woff?405jn0") format("woff"), url("../fonts/icomoon.svg?405jn0#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?lw55g");
+  src: url("../fonts/icomoon.eot?lw55g#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?lw55g") format("truetype"), url("../fonts/icomoon.woff?lw55g") format("woff"), url("../fonts/icomoon.svg?lw55g#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -5983,11 +5983,11 @@ pre {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-logo-text:before {
+  content: "\e901"; }
+
 .icon-logo-icon-thick:before {
   content: "\e900"; }
-
-.icon-menu:before {
-  content: "\e901"; }
 
 /**
  * Site header
@@ -6006,7 +6006,7 @@ pre {
 
 .site-title, .site-title:visited, .site-title:hover {
   display: inline-block;
-  font-family: 'Filson-soft', 'Open sans', sans-serif;
+  font-family: "Filson-soft", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2.25rem;
   font-weight: 300;
   letter-spacing: -1px;
@@ -6015,8 +6015,7 @@ pre {
   color: #ffffff;
   text-decoration: none; }
   .site-title [class^="icon"], .site-title:visited [class^="icon"], .site-title:hover [class^="icon"] {
-    font-size: 400%;
-    margin-left: -30px; }
+    font-size: 400%; }
   .site-title .text, .site-title:visited .text, .site-title:hover .text {
     position: relative;
     left: -1.5rem;
@@ -6028,6 +6027,27 @@ pre {
   @media screen and (max-width: 600px) {
     .site-title .text, .site-title:visited .text, .site-title:hover .text {
       top: -2.8rem; } }
+
+.phone-number {
+  color: #ffffff;
+  font-family: "Filson-soft", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  @media screen and (max-width: 800px) {
+    .phone-number {
+      margin-top: 10px;
+      float: right; } }
+  @media screen and (max-width: 600px) {
+    .phone-number {
+      background: #299c54;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      display: block;
+      padding: 15px;
+      text-align: center; }
+      .phone-number:before {
+        content: 'Call now: '; } }
 
 .menu-icon {
   display: none;
@@ -6093,7 +6113,7 @@ pre {
   position: absolute;
   right: 0;
   bottom: 1px;
-  font-family: 'filson-soft', 'open-sans', sans-serif; }
+  font-family: "Filson-soft", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .nav > li {
     border: 2px solid #ffffff;
     border-width: 2px 2px 0;
@@ -6159,7 +6179,7 @@ pre {
     color: #fff;
     border-color: #fff;
     text-shadow: 0 0 5px #000;
-    font-family: 'filson-soft';
+    font-family: "Filson-soft", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-top: 15px; }
     .home .intro .button:hover {
       background: #ffffff;
