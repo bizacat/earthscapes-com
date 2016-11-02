@@ -47,10 +47,15 @@
 }
 
 .phone-number {
-    color: #ffffff;
     font-family: $filson-soft;
     margin-top: 10px;
     float: right;
+    span, a {
+        color: #ffffff;
+    }
+    span {
+        display: none;
+    }
     @include media-query($on-palm) {
         background: $brand-color;
         margin: 0;
@@ -64,8 +69,11 @@
         display: block;
         padding: $spacing-unit * 0.5;
         text-align: center;
-        &:before {
-            content: 'Call now: ';
+        span {
+            display: inline-block;
+        }
+        a {
+            font-weight: 500;
         }
     }
 }
@@ -193,6 +201,7 @@
             font-size: 13px;
             font-weight: 100;
             opacity: 0.65;
+            letter-spacing: 0.75px;
         }
     }
 
@@ -252,9 +261,26 @@
 
     .services {
         text-align: center;
+        padding-top: $spacing-unit;
+        a {
+            h2 {
+                color: #333333;
+            }
+            text-decoration: none;
+        }
+        img {
+            margin-bottom: 15px;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
         ul {
             margin: 0 0 $spacing-unit;
             list-style-type: none;
+            color: grey;
+        }
+        .button {
+            font-size: 15px;
         }
     }
 
@@ -267,6 +293,8 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background: $grey-color-dark;
+    color: #ffffff;
 }
 
 .footer-heading {

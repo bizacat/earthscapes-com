@@ -5955,7 +5955,7 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
-.button {
+.button, a.button {
   display: inline-block;
   padding: 10px 15px;
   color: #299c54;
@@ -5963,6 +5963,9 @@ pre {
   outline: 0;
   box-shadow: 0;
   font-size: 18px; }
+  .button:hover, a.button:hover {
+    background: #299c54;
+    color: #ffffff; }
 
 @font-face {
   font-family: 'icomoon';
@@ -6029,10 +6032,13 @@ pre {
       top: -2.8rem; } }
 
 .phone-number {
-  color: #ffffff;
   font-family: "Filson-soft", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 10px;
   float: right; }
+  .phone-number span, .phone-number a {
+    color: #ffffff; }
+  .phone-number span {
+    display: none; }
   @media screen and (max-width: 600px) {
     .phone-number {
       background: #299c54;
@@ -6047,8 +6053,10 @@ pre {
       display: block;
       padding: 15px;
       text-align: center; }
-      .phone-number:before {
-        content: 'Call now: '; } }
+      .phone-number span {
+        display: inline-block; }
+      .phone-number a {
+        font-weight: 500; } }
 
 .menu-icon {
   display: none;
@@ -6146,7 +6154,8 @@ pre {
     .nav .dropdown-menu .description {
       font-size: 13px;
       font-weight: 100;
-      opacity: 0.65; }
+      opacity: 0.65;
+      letter-spacing: 0.75px; }
   @media screen and (max-width: 600px) {
     .nav {
       display: none;
@@ -6191,17 +6200,31 @@ pre {
       padding-top: 30px;
       background-position-x: 5%; } }
 .home .services {
-  text-align: center; }
+  text-align: center;
+  padding-top: 30px; }
+  .home .services a {
+    text-decoration: none; }
+    .home .services a h2 {
+      color: #333333; }
+  .home .services img {
+    margin-bottom: 15px; }
+    .home .services img:hover {
+      opacity: 0.5; }
   .home .services ul {
     margin: 0 0 30px;
-    list-style-type: none; }
+    list-style-type: none;
+    color: grey; }
+  .home .services .button {
+    font-size: 15px; }
 
 /**
  * Site footer
  */
 .site-footer {
   border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
+  padding: 30px 0;
+  background: #424242;
+  color: #ffffff; }
 
 .footer-heading {
   font-size: 18px;
