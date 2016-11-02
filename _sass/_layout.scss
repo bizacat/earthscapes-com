@@ -49,17 +49,18 @@
 .phone-number {
     color: #ffffff;
     font-family: $filson-soft;
-    @include media-query($on-laptop) {
-        margin-top: 10px;
-        float: right;
-    }
+    margin-top: 10px;
+    float: right;
     @include media-query($on-palm) {
         background: $brand-color;
+        margin: 0;
+        float: none;
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
         width: 100%;
+        z-index: 999;
         display: block;
         padding: $spacing-unit * 0.5;
         text-align: center;

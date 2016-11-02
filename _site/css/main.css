@@ -6030,19 +6030,20 @@ pre {
 
 .phone-number {
   color: #ffffff;
-  font-family: "Filson-soft", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  @media screen and (max-width: 800px) {
-    .phone-number {
-      margin-top: 10px;
-      float: right; } }
+  font-family: "Filson-soft", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+  float: right; }
   @media screen and (max-width: 600px) {
     .phone-number {
       background: #299c54;
+      margin: 0;
+      float: none;
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
       width: 100%;
+      z-index: 999;
       display: block;
       padding: 15px;
       text-align: center; }
