@@ -48,11 +48,24 @@ $on-laptop:        800px;
 
 
 
-// Import partials from `sass_dir` (defaults to `_sass`)
+// Vendor
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Utilities
+@import "utilities/icomoon-fonts",
+        "utilities/reset";
+
+
+// Components
+@import "components/button",
+        "components/header",
+        "components/default-layout";
+
+// Pages
+@import "pages/home",
+        "pages/services",
+        "pages/landscaping";
+
 @import
-        "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap",
-        "base",
-        "button",
-        "icomoon-fonts",
         "layout"
 ;

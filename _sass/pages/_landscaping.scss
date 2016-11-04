@@ -1,0 +1,14 @@
+.landscaping {
+
+  .intro {
+    background-image: url('../images/patio-3a.jpg');
+    background-position-y: 60%;
+
+    @include media-query($on-palm){
+      padding-top: $spacing-unit;
+      background-image: url('../images/patio-3a.jpg');
+      background-position-x: 5%;
+    }
+  }
+
+}

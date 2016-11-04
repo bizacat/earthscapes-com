@@ -1,0 +1,36 @@
+.home {
+  .intro {
+    background-image: url('../images/firepit-1b.jpg');
+
+    @include media-query($on-palm){
+      padding-top: $spacing-unit;
+      background-image: url('../images/firepit-1b-dark.jpg');
+      background-position-x: 5%;
+    }
+  }
+  .services {
+    text-align: center;
+    padding-top: $spacing-unit;
+    a {
+      h2 {
+        color: #333333;
+      }
+      text-decoration: none;
+    }
+    img {
+      margin-bottom: 15px;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    ul {
+      margin: 0 0 $spacing-unit;
+      list-style-type: none;
+      color: grey;
+    }
+    .button {
+      font-size: 15px;
+    }
+  }
+
+}

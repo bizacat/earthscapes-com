@@ -14,6 +14,8 @@
   <link rel="canonical" href="http://bizacat.github.io//earthscapes-com/services/">
   <link rel="alternate" type="application/rss+xml" title="Earthscapes" href="http://bizacat.github.io//earthscapes-com/feed.xml">
 
+  <link rel="stylesheet" href="/earthscapes-com/css/blueimp-gallery.min.css">
+
   <script src="/earthscapes-com/node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://use.typekit.net/wnl6qqg.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -29,7 +31,7 @@
     <div class="row">
       <div class="col-xs-12">
         <a class="site-title" href="/earthscapes-com/">
-          <span class="icon-logo-text" alt="EARTHscapes"></span>
+          <img src="/earthscapes-com/images/earthscapes-main-logo.svg" alt="Earthscapes Logo" title="Earthscapes" width="190" height="100">
         </a>
         <div id="nav-icon1" class="menu-icon">
           <span></span>
@@ -137,5 +139,17 @@
 
   <script src="/earthscapes-com/node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
   <script src="/earthscapes-com/javascripts/helpers.js"></script>
+  <script src="/earthscapes-com/javascripts/blueimp-gallery.min.js"></script>
+
+  <script>
+  document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = {index: link, event: event},
+            links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+  };
+  </script>
 
 </html>

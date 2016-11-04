@@ -5806,6 +5806,31 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?lw55g");
+  src: url("../fonts/icomoon.eot?lw55g#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?lw55g") format("truetype"), url("../fonts/icomoon.woff?lw55g") format("woff"), url("../fonts/icomoon.svg?lw55g#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-logo-text:before {
+  content: "\e901"; }
+
+.icon-logo-icon-thick:before {
+  content: "\e900"; }
+
 /**
  * Reset some basic elements
  */
@@ -5967,34 +5992,6 @@ pre {
     background: #299c54;
     color: #ffffff; }
 
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?lw55g");
-  src: url("../fonts/icomoon.eot?lw55g#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?lw55g") format("truetype"), url("../fonts/icomoon.woff?lw55g") format("woff"), url("../fonts/icomoon.svg?lw55g#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-logo-text:before {
-  content: "\e901"; }
-
-.icon-logo-icon-thick:before {
-  content: "\e900"; }
-
-/**
- * Site header
- */
 .site-header {
   min-height: 56px;
   background: #299c54 url("../images/brick-pattern.jpg");
@@ -6004,32 +6001,11 @@ pre {
     .site-header {
       height: 100px; } }
 
-.wrapper {
-  position: relative; }
-
 .site-title, .site-title:visited, .site-title:hover {
   display: inline-block;
   font-family: "Filson-soft", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2.25rem;
-  font-weight: 300;
-  letter-spacing: -1px;
-  line-height: 1;
-  margin-bottom: 0;
-  color: #ffffff;
-  text-decoration: none; }
-  .site-title [class^="icon"], .site-title:visited [class^="icon"], .site-title:hover [class^="icon"] {
-    font-size: 400%; }
-  .site-title .text, .site-title:visited .text, .site-title:hover .text {
-    position: relative;
-    left: -1.5rem;
-    top: -1.8rem; }
-  .site-title strong, .site-title:visited strong, .site-title:hover strong {
-    font-weight: 700;
-    font-size: 130%;
-    letter-spacing: 1px; }
-  @media screen and (max-width: 600px) {
-    .site-title .text, .site-title:visited .text, .site-title:hover .text {
-      top: -2.8rem; } }
+  font-size: 2rem;
+  color: #ffffff; }
 
 .phone-number {
   font-family: "Filson-soft", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -6173,28 +6149,33 @@ pre {
       .nav .dropdown-menu {
         right: 0; } }
 
-.home .intro {
+.intro {
   padding-top: 90px;
-  background: url("../images/firepit-1b.jpg") no-repeat;
   background-size: cover;
   background-position-y: 15%;
   width: 100%;
   height: 40rem;
   color: #ffffff;
   text-shadow: 0 0 5px #000; }
-  .home .intro h4 {
+  .intro h4 {
     font-weight: 100; }
-  .home .intro .button {
+  .intro .button {
     background: rgba(255, 255, 255, 0.125);
     color: #fff;
     border-color: #fff;
     text-shadow: 0 0 5px #000;
     font-family: "Filson-soft", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-top: 15px; }
-    .home .intro .button:hover {
+    .intro .button:hover {
       background: #ffffff;
       color: #333333;
       text-shadow: none; }
+
+.wrapper {
+  position: relative; }
+
+.home .intro {
+  background-image: url("../images/firepit-1b.jpg"); }
   @media screen and (max-width: 600px) {
     .home .intro {
       padding-top: 30px;
@@ -6217,6 +6198,18 @@ pre {
     color: grey; }
   .home .services .button {
     font-size: 15px; }
+
+.services .intro {
+  text-align: center; }
+
+.landscaping .intro {
+  background-image: url("../images/patio-3a.jpg");
+  background-position-y: 60%; }
+  @media screen and (max-width: 600px) {
+    .landscaping .intro {
+      padding-top: 30px;
+      background-image: url("../images/patio-3a.jpg");
+      background-position-x: 5%; } }
 
 /**
  * Site footer
