@@ -1,0 +1,25 @@
+<footer class="site-footer">
+  <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/helpers.js" | prepend: site.baseurl }}"></script>
+
+  <script>
+    $(document).ready(function(){
+      $(function () {
+        $('[data-toggle="popover"]').popover({
+          template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+        })
+      });
+
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+
+      $(function () {
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="popover"]').on('click', function(e) {
+          $('[data-toggle="popover"]').not(this).popover('hide');
+        });
+      });
+    });
+  </script>
+</footer>
